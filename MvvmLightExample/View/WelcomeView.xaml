@@ -1,0 +1,24 @@
+﻿<Window x:Class="MvvmLightExample.View.WelcomeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MvvmLightExample.View"
+        mc:Ignorable="d"
+        Title="WelcomeView" Height="600" Width="800"
+        DataContext="{Binding Source={StaticResource Locator},Path=Welcome}" WindowStartupLocation="CenterScreen">
+        
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="3">
+            <Button Content="双向绑定" Command="{Binding ShowBothWayBindWindow}"></Button>
+            <Button Content="绑定的各种使用场景" Command="{Binding ShowBindingAdvancedWindow}" Margin="3,0,0,0"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{Binding Welcome.Introduction}" FontSize="30"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
