@@ -37,3 +37,6 @@ G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\BothWayBindView.g.cs
 G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\BothWayBindView.baml
 G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\BindingAdvancedView.g.cs
 G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\BindingAdvancedView.baml
+G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.dll
+G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.xml
+G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.config

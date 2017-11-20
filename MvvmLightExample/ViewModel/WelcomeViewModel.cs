@@ -1,7 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using MvvmLightExample.Common;
 using MvvmLightExample.Model;
 using MvvmLightExample.View;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +15,12 @@ namespace MvvmLightExample.ViewModel
 	public class WelcomeViewModel : ViewModelBase
 	{
 		private WelcomeModel welcome;
-		public WelcomeViewModel()
+		private INLogHelper _logger;
+		public WelcomeViewModel(INLogHelper logger)
 		{
+			_logger = logger;
 			Welcome = new WelcomeModel { Introduction = "Hello World" };
+			_logger.Log(LogLevel.Error, "teset");
 		}
 
 		public WelcomeModel Welcome

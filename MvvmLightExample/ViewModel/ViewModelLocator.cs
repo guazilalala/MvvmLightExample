@@ -12,7 +12,9 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using MvvmLightExample.Common;
 using MvvmLightExample.Model;
+
 
 namespace MvvmLightExample.ViewModel
 {
@@ -32,16 +34,20 @@ namespace MvvmLightExample.ViewModel
 			if (ViewModelBase.IsInDesignModeStatic)
 			{
 				SimpleIoc.Default.Register<IDataService, Design.DesignDataService>();
+				SimpleIoc.Default.Register<INLogHelper, NLogHelper>();
 			}
 			else
 			{
 				SimpleIoc.Default.Register<IDataService, DataService>();
+				SimpleIoc.Default.Register<INLogHelper, NLogHelper>();
+
 			}
 
 			SimpleIoc.Default.Register<MainViewModel>();
 			SimpleIoc.Default.Register<WelcomeViewModel>();
 			SimpleIoc.Default.Register<BothWayBindViewlModel>();
 			SimpleIoc.Default.Register<BindingAdvancedViewModel>();
+			
 		}
 
 		/// <summary>
