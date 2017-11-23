@@ -40,3 +40,7 @@ G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\BindingAdvancedView.b
 G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.dll
 G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.xml
 G:\GitHub\MvvmLightExample\MvvmLightExample\bin\Debug\NLog.config
+G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\ChildView.g.cs
+G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\ParentView.g.cs
+G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\ChildView.baml
+G:\GitHub\MvvmLightExample\MvvmLightExample\obj\Debug\View\ParentView.baml

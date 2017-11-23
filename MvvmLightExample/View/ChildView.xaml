@@ -1,0 +1,17 @@
+﻿<Window x:Class="MvvmLightExample.View.ChildView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MvvmLightExample.View"
+        mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Child}"
+        Title="子窗口" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding MessageFromParent, StringFormat='消息{0}'}"></TextBlock>
+    </Grid>
+</Window>

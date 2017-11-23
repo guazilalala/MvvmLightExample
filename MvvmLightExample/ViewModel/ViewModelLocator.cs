@@ -47,7 +47,9 @@ namespace MvvmLightExample.ViewModel
 			SimpleIoc.Default.Register<WelcomeViewModel>();
 			SimpleIoc.Default.Register<BothWayBindViewlModel>();
 			SimpleIoc.Default.Register<BindingAdvancedViewModel>();
-			
+			SimpleIoc.Default.Register<ParentViewModel>();
+			SimpleIoc.Default.Register<ChildViewModel>();
+
 		}
 
 		/// <summary>
@@ -85,6 +87,22 @@ namespace MvvmLightExample.ViewModel
 			get
 			{
 				return ServiceLocator.Current.GetInstance<BindingAdvancedViewModel>();
+			}
+		}
+
+		public ParentViewModel Parent
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<ParentViewModel>();
+			}
+		}
+
+		public ChildViewModel Child
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<ChildViewModel>();
 			}
 		}
 

@@ -1,5 +1,4 @@
-﻿using MvvmLightExample.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,19 +15,13 @@ using System.Windows.Shapes;
 namespace MvvmLightExample.View
 {
 	/// <summary>
-	/// WelcomeView.xaml 的交互逻辑
+	/// ChildView.xaml 的交互逻辑
 	/// </summary>
-	public partial class WelcomeView : Window
+	public partial class ChildView : Window
 	{
-		public WelcomeView()
+		public ChildView()
 		{
 			InitializeComponent();
-
-		}
-
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-			new ParentView().Show();
 		}
 	}
 }

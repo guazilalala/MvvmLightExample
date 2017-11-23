@@ -16,6 +16,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="3">
             <Button Content="双向绑定" Command="{Binding ShowBothWayBindWindow}"></Button>
             <Button Content="绑定的各种使用场景" Command="{Binding ShowBindingAdvancedWindow}" Margin="3,0,0,0"></Button>
+            <Button Content="窗口传值" Margin="3,0,0,0" Click="Button_Click"></Button>
         </StackPanel>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="{Binding Welcome.Introduction}" FontSize="30"></TextBlock>

@@ -10,11 +10,11 @@ none
 false
 CODE_ANALYSIS;DEBUG;TRACE
 G:\GitHub\MvvmLightExample\MvvmLightExample\App.xaml
-5605673135
+7-80371407
 
-27847220576
+31-1423642439
 69-1396496531
-MainWindow.xaml;Skins\MainSkin.xaml;View\BindingAdvancedView.xaml;View\BothWayBindView.xaml;View\WelcomeView.xaml;
+MainWindow.xaml;Skins\MainSkin.xaml;View\BindingAdvancedView.xaml;View\BothWayBindView.xaml;View\ChildView.xaml;View\ParentView.xaml;View\WelcomeView.xaml;
 
 False
 
